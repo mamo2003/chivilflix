@@ -6,11 +6,21 @@ $colortext: white;
 $sizetext:12px;
 $colorcards: lighten $bgcolor;
 body{background-color: $bgcolor;}
-.titulo { color:$titulos; text-align: center; font-size: xx-large;font-family: monospace;}
+main{margin-top: 80px;}
+.stitulo{ color:$titulos; 
+text-align: center; 
+font-family: monospace;}
+#titulo{@extend .stitulo;
+background-color: $bgcolor; 
+position: fixed;
+top:0px; 
+width: 100%;   
+height: 60px;
+}
 .generos{color:$titulos; text-align: center;}
 .copyright { color:$titulos;text-align: center;}
 .linkeos{background-color: $bgcolor; color:$titulos;}
-.linkeos ul{display:flex; list-style: none;}
+.linkeos ul{display:flex; list-style: none;margin-top:100px;}
 a{color:$titulos; text-decoration: none;margin-right: 40px;}
 /* CARDS */
 .card {  display: grid;color:$colortext;
@@ -44,17 +54,16 @@ a{color:$titulos; text-decoration: none;margin-right: 40px;}
 .duracion2 { grid-area: duracion2; }
 .duracion3 { grid-area: duracion3; }
 .duracion4 { grid-area: duracion4; }
-.lupai { grid-area: lupai; }
+.lupai { grid-area: lupai;}
 .lupa2 { grid-area: lupa2; }
 .lupa3 { grid-area: lupa3; }
 .lupa4 { grid-area: lupa4; }
 b{color:$colorinfo}
-.boton2{align-self: flex-end;
-  align-content: right;
+.boton2{align-self: right;
 border-radius: 50%;
 background-color: $colorinfo}
  /*  card_detalis */
-  .cards_details { margin-top: 10px; 
+  .cards_details { margin-top: 70px; margin-bottom: 60px;
     display: grid;
     grid-template-columns: 410px 100px 300px;
     grid-template-rows: 1fr 1fr 1fr 1.2fr  1fr 1fr 1fr;
