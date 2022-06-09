@@ -102,6 +102,6 @@ border: none;}
   .genero_detalle { grid-area: genero_detalle; color:$colortext;}
   .categoria_detalle { grid-area: categoria_detalle; color:$colortext;}
   
-  @media (max-width: 1028px) {grid-template-columns: 3 1fr;}
-  @media (max-width: 700px) {}
+  @media (max-width: 1028px) {.card {display: block;} .lupa{display:none}} 
+  @media (max-width: 700px) {.cards_details{display:block;}}
   @media (max-width: 400px) {}

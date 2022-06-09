@@ -204,4 +204,11 @@ b {
   color: white; }
 
 @media (max-width: 1028px) {
-  grid-template-columns: 3 1fr; }
+  .card {
+    display: block; }
+
+  .lupa {
+    display: none; } }
+@media (max-width: 700px) {
+  .cards_details {
+    display: block; } }
