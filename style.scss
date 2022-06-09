@@ -1,0 +1,158 @@
+$bgcolor:black;
+$titulos: red;
+$colorinfo: yellow;
+$sizeinfo: 14px;
+$colortext: white;
+$sizetext:12px;
+$colorcards: lighten $bgcolor;
+
+body{background-color: $bgcolor;}
+header{background-color: $bgcolor;}
+.titulo { color:$titulos; text-align: center; font-size: xx-large;font-family: monospace;}
+.generos{ color:$titulos;}
+.copyright{ color:$titulos;}
+.linkeos{background-color: $bgcolor; color:$titulos;}
+a{color:$titulos; text-decoration: none;margin-right: 40px;}
+/* CARDS */
+.cards {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 15px;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: stretch;
+    grid-template-areas:
+      "fotopeli PELI2 PELI3 peli4"
+      "detalle_peli . . .";
+    width: 100%;
+    height: 670px;
+  }
+  
+  .fotopeli { grid-area: fotopeli; }
+  
+  .detalle_peli {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "lupa lupa lupa"
+      "genero genero genero"
+      "duracion duracion duracion";
+    grid-area: detalle_peli;
+  }
+  
+  .genero { grid-area: genero; }
+  
+  .duracion { grid-area: duracion; }
+  
+  .lupa { grid-area: lupa; }
+  
+  .i2 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "lupa2 lupa2 lupa2"
+      "genero2 genero2 genero2"
+      "duracion2 duracion2 duracion2";
+  }
+  
+  .lupa2 { grid-area: lupa2; }
+  
+  .genero2 { grid-area: genero2; }
+  
+  .duracion2 { grid-area: duracion2; }
+  
+  .i3 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "lupa3 lupa3 lupa3"
+      "genero3 genero3 genero3"
+      "duracion3 duracion3 duracion3";
+  }
+  
+  .genero3 { grid-area: genero3; }
+  
+  .duracion3 { grid-area: duracion3; }
+  
+  .lupa3 { grid-area: lupa3; }
+  
+  .i4 {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+      "lupa4 lupa4 lupa4"
+      "genero4 genero4 genero4"
+      "duracion4 duracion4 duracion4";
+  }
+  
+  .lupa4 { grid-area: lupa4; }
+  
+  .genero4 { grid-area: genero4; }
+  
+  .duracion4 { grid-area: duracion4; }
+  
+  .PELI2 { grid-area: PELI2; }
+  
+  .PELI3 { grid-area: PELI3; }
+  
+  .peli4 { grid-area: peli4; }
+  
+ /*  card_detalis */
+  .cards_details {  display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 4px 3px;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: stretch;
+    grid-template-areas:
+      "fotopeli_d categoria categoria_detalle"
+      "fotopeli_d genero genero_detalle"
+      "fotopeli_d resumen resumen_detalle"
+      "fotopeli_d resumen resumen_detalle"
+      "fotopeli_d resumen resumen_detalle"
+      "fotopeli_d duracion duracion_detalle"
+      "fotopeli_d reparto reparto_detalle"
+      "fotopeli_d reparto reparto_detalle";
+    width: 100%;
+    height: 670px;
+  }
+  
+  .fotopeli_d { grid-area: fotopeli_d; }
+  
+  .categoria { grid-area: categoria; }
+  
+  .genero { grid-area: genero; }
+  
+  .resumen { grid-area: resumen; }
+  
+  .duracion { grid-area: duracion; }
+  
+  .reparto { grid-area: reparto; }
+  
+  .reparto_detalle { grid-area: reparto_detalle; }
+  
+  .duracion_detalle { grid-area: duracion_detalle; }
+  
+  .resumen_detalle { grid-area: resumen_detalle; }
+  
+  .genero_detalle { grid-area: genero_detalle; }
+  
+  .categoria_detalle { grid-area: categoria_detalle; }
+  
