@@ -47,15 +47,14 @@ a {
 .card {
   display: grid;
   color: white;
-  border: 4px;
-  border-color: green;
   font-family: "Big Shoulders Inline Text", cursive;
-  grid-template-columns: 23% 23% 23% 23%;
+  margin-left: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 354px 40px 40px 40px;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 10px;
-  grid-auto-flow: row;
+  grid-auto-flow: dense;
   justify-content: center;
   align-content: stretch;
   justify-items: stretch;
@@ -65,16 +64,24 @@ a {
   background-color: black; }
 
 .foto {
-  grid-area: foto; }
+  grid-area: foto;
+  height: 236px;
+  width: 354px; }
 
 .foto2 {
-  grid-area: foto2; }
+  grid-area: foto2;
+  height: 236px;
+  width: 354px; }
 
 .foto3 {
-  grid-area: foto3; }
+  grid-area: foto3;
+  height: 236px;
+  width: 354px; }
 
 .foto4 {
-  grid-area: foto4; }
+  grid-area: foto4;
+  height: 236px;
+  width: 354px; }
 
 .genero2 {
   grid-area: genero2; }
@@ -103,25 +110,25 @@ a {
 .lupai {
   grid-area: lupai;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: -20px; }
 
 .lupa2 {
   grid-area: lupa2;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: -20px; }
 
 .lupa3 {
   grid-area: lupa3;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: -20px; }
 
 .lupa4 {
   grid-area: lupa4;
   text-align: center;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: -20px; }
 
 b {
@@ -195,3 +202,6 @@ b {
 .categoria_detalle {
   grid-area: categoria_detalle;
   color: white; }
+
+@media (max-width: 1028px) {
+  grid-template-columns: 3 1fr; }

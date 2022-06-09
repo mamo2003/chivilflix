@@ -6,6 +6,8 @@ $colortext: white;
 $sizetext:14px;
 $colorcards: lighten $bgcolor;
 $fontfamily: 'Big Shoulders Inline Text', cursive;
+$imagevw: 236px;
+$imagew: 354px;
 body{background-color: $bgcolor;}
 .stitulo{ color:$titulos; 
 text-align: center; 
@@ -26,13 +28,13 @@ margin-top: 0px;}
 .linkeos ul{display:flex; list-style: none;margin-top:60px;}
 a{color:$titulos; text-decoration: none;margin-right: 40px;}
 /* CARDS */
-.card {  display: grid;color:$colortext;border:4px;border-color:green;font-family: $fontfamily;
-  grid-template-columns: 23% 23% 23% 23%;
+.card {  display: grid;color:$colortext;font-family: $fontfamily;margin-left: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 354px 40px 40px 40px;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 10px;
-  grid-auto-flow: row;
+  grid-auto-flow:dense;
   justify-content: center;
   align-content: stretch;
   justify-items: stretch;
@@ -45,10 +47,10 @@ a{color:$titulos; text-decoration: none;margin-right: 40px;}
   height: 670px;
   background-color: $bgcolor;
 }
-.foto { grid-area: foto; }
-.foto2 { grid-area: foto2; }
-.foto3 { grid-area: foto3; }
-.foto4 { grid-area: foto4; }
+.foto { grid-area: foto; height: $imagevw;width: $imagew;}
+.foto2 { grid-area: foto2; height: $imagevw;width: $imagew;}
+.foto3 { grid-area: foto3; height: $imagevw;width: $imagew;}
+.foto4 { grid-area: foto4; height: $imagevw;width: $imagew;}
 .genero2 { grid-area: genero2; }
 .genero3 { grid-area: genero3; }
 .genero4 { grid-area: genero4; }
@@ -57,10 +59,10 @@ a{color:$titulos; text-decoration: none;margin-right: 40px;}
 .duracion2 { grid-area: duracion2; }
 .duracion3 { grid-area: duracion3; }
 .duracion4 { grid-area: duracion4; }
-.lupai { grid-area: lupai; text-align: center;margin-left:100px;margin-top: -20px;}
-.lupa2 { grid-area: lupa2; text-align: center;margin-left:100px;margin-top: -20px;}
-.lupa3 { grid-area: lupa3;  text-align: center;margin-left:100px;margin-top: -20px;}
-.lupa4 { grid-area: lupa4;  text-align: center;margin-left:100px;margin-top: -20px;}
+.lupai { grid-area: lupai; text-align: center;margin-left:60px;margin-top: -20px;}
+.lupa2 { grid-area: lupa2; text-align: center;margin-left:60px;margin-top: -20px;}
+.lupa3 { grid-area: lupa3;  text-align: center;margin-left:60px;margin-top: -20px;}
+.lupa4 { grid-area: lupa4;  text-align: center;margin-left:60px;margin-top: -20px;}
 b{color:$colorinfo}
 .boton2{align-self: right;
 border-radius: 50%;
@@ -100,3 +102,6 @@ border: none;}
   .genero_detalle { grid-area: genero_detalle; color:$colortext;}
   .categoria_detalle { grid-area: categoria_detalle; color:$colortext;}
   
+  @media (max-width: 1028px) {grid-template-columns: 3 1fr;}
+  @media (max-width: 700px) {}
+  @media (max-width: 400px) {}
