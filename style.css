@@ -148,7 +148,7 @@ b {
   grid-template-columns: 410px 100px 350px;
   grid-template-rows: 1fr 1fr 1fr 1.2fr  1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 1px 1px;
+  gap: 0.5px 1px;
   grid-auto-flow: column;
   justify-content: center;
   align-content: stretch;
@@ -203,15 +203,15 @@ b {
   color: white; }
 
 @media (max-width: 900px) {
-  .copyright {
-    display: none; }
+  img {
+    width: 85%; }
 
   .card {
     height: 100%;
     align-items: baseline;
     display: inline-block;
     position: relative;
-    margin-left: 5px; }
+    margin-left: 1rem; }
 
   .lupai {
     display: none; }
@@ -223,6 +223,9 @@ b {
     display: none; }
 
   .lupa4 {
+    display: none; }
+
+  .copyright {
     display: none; } }
 @media (max-width: 700px) {
   .cards_details {
@@ -231,7 +234,7 @@ b {
     margin-left: 5px;
     height: 100%; }
 
-  .titulo {
+  #titulo {
     display: inline-block;
     position: sticky;
     background-color: black;
@@ -239,3 +242,7 @@ b {
     width: 100%;
     height: 60px;
     z-index: 999; } }
+@media (max-width: 400px) {
+  .linkeos ul {
+    display: block;
+    text-align: center; } }
