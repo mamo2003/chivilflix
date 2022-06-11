@@ -1,7 +1,7 @@
 body {
   background-color: black; }
 
-.stitulo, #titulo {
+.stitulo, #titulo, h1 {
   color: red;
   text-align: center;
   font-family: "Big Shoulders Inline Text", cursive; }
@@ -16,7 +16,9 @@ body {
 
 h1 {
   font-size: 50px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  background-color: black;
+  top: 0px; }
 
 .generos {
   color: white;

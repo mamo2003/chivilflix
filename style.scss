@@ -20,8 +20,12 @@ top:0px;
 width: 100%;   
 height: 60px;
 }
-h1{font-size: 50px;
-margin-top: 0px;}
+h1{
+@extend .stitulo;
+font-size: 50px;
+margin-top: 0px;
+background-color: black;
+top:0px;}
 .generos{color:$colortext; text-align: center;font-family: $fontfamily;}
 .copyright { color:$titulos;text-align: center;font-family: $fontfamily;}
 .linkeos{background-color: $bgcolor; color:$titulos;font-family: $fontfamily;}
