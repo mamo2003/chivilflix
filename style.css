@@ -46,88 +46,20 @@ a {
 /* CARDS */
 .card {
   display: grid;
-  color: white;
-  margin-left: 60px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 354px 40px 40px 40px;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 1fr 1fr;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-content: stretch;
-  justify-items: stretch;
-  grid-template-areas: "foto foto2 foto3 foto4" "lupai lupa2 lupa3 lupa4" "generoi genero2 genero3 genero4" "duracioni duracion2 duracion3 duracion4";
+  margin-left: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(236px, 236px));
+  grid-template-rows: 450px;
+  gap: 6rem;
+  grid-auto-flow: row;
   width: 100%;
-  height: 670px;
   background-color: black; }
 
-.foto {
-  grid-area: foto;
-  height: 354px;
-  width: 236px; }
+.card div {
+  color: white; }
 
-.foto2 {
-  grid-area: foto2;
-  height: 354px;
-  width: 236px; }
-
-.foto3 {
-  grid-area: foto3;
-  height: 354px;
-  width: 236px; }
-
-.foto4 {
-  grid-area: foto4;
-  height: 354px;
-  width: 236px; }
-
-.genero2 {
-  grid-area: genero2; }
-
-.genero3 {
-  grid-area: genero3; }
-
-.genero4 {
-  grid-area: genero4; }
-
-.generoi {
-  grid-area: generoi; }
-
-.duracioni {
-  grid-area: duracioni; }
-
-.duracion2 {
-  grid-area: duracion2; }
-
-.duracion3 {
-  grid-area: duracion3; }
-
-.duracion4 {
-  grid-area: duracion4; }
-
-.lupai {
-  grid-area: lupai;
-  text-align: center;
-  margin-left: 60px;
-  margin-top: -20px; }
-
-.lupa2 {
-  grid-area: lupa2;
-  text-align: center;
-  margin-left: 60px;
-  margin-top: -20px; }
-
-.lupa3 {
-  grid-area: lupa3;
-  text-align: center;
-  margin-left: 60px;
-  margin-top: -20px; }
-
-.lupa4 {
-  grid-area: lupa4;
-  text-align: center;
-  margin-left: 60px;
+.lupa {
+  text-align: right;
+  margin-right: 20px;
   margin-top: -20px; }
 
 b {
@@ -202,31 +134,6 @@ b {
   grid-area: categoria_detalle;
   color: white; }
 
-@media (max-width: 900px) {
-  img {
-    width: 85%; }
-
-  .card {
-    height: 100%;
-    align-items: baseline;
-    display: inline-block;
-    position: relative;
-    margin-left: 1rem; }
-
-  .lupai {
-    display: none; }
-
-  .lupa2 {
-    display: none; }
-
-  .lupa3 {
-    display: none; }
-
-  .lupa4 {
-    display: none; }
-
-  .copyright {
-    display: none; } }
 @media (max-width: 700px) {
   .cards_details {
     display: inline-block;
