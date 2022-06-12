@@ -94,7 +94,9 @@ b {
 .fotopeli_d {
   grid-area: fotopeli_d;
   text-align: center; }
-
+  .fotopeli_d :hover {
+    transform: scale(1.4); 
+  }
 .categoria {
   grid-area: categoria;
   color: yellow; }
